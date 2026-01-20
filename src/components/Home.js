@@ -1,6 +1,5 @@
-import { Link, useLocation, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 export default function Home() {
-    const location = useLocation();
     const navigate = useNavigate();
   return (
     <div className="home">
