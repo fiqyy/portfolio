@@ -1,0 +1,3 @@
+- [x] Modify PDF preview in About.js to display all pages of the resume
+- [x] Remove the PDF controls section from About.js
+- [x] Verify download resume button functionality (keeping existing code)

@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
+:root {
+  background-color: black;
+  color:white;
+  font-family: monospace;
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Animation Styles */
+.splash-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, rgba(2,99,99,0.3) 0%, transparent 50%);
+  animation: moveSplash 10s linear infinite;
+  will-change: transform;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes moveSplash {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(10vw) translateY(10vh);
+  }
+  50% {
+    transform: translateX(20vw) translateY(-20vh);
+  }
+  75% {
+    transform: translateX(-20vw) translateY(20vh);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header Styles */
+.nav-item a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-item a:hover {
+  color: rgb(2, 99, 99);
+  transform: scale(1.05);
+  text-decoration: underline ;
+}
+.header-nav {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+.nav-item {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: end;
+  margin-right: 40px;
+  margin-top:10px;
+  font-size: larger;
+}
+/* Home Styles */
+.home {
+  margin-top:160px;
+}
+.hi-text {
+  text-align: center;
+}
+.hi-text2 {
+  text-align: center;
+}
+.button-container {
+  text-align: center;
+}
+.home-button {
+  padding: 13px;
+  margin-right:20px;
+  margin-left:20px;
+  margin-top:10px;
+  border-color: white;
+  border-radius: 8px;;
+  background-color: transparent;
+  color:white;
+  font-family: monospace;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+.home-button:hover {
+  cursor: pointer;
+  background-color: rgb(2, 99, 99);
+  transform: scale(1.1)
+}
+/* Projects Styles */
+/* USED REACT BITS COMPONENT */
+
+/*Contact Styles */
+.contact-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.contact-box {
+  border: 1px solid white;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  width: fit-content;
+  order: 1;
+}
+.social-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.social-button a {
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 24px;
+}
+.social-button:hover {
+  cursor: pointer;
+  background-color: rgb(2, 99, 99);
+  transform: scale(1.1)
+}
+.info-box {
+  order: 2;
+  flex: 1;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.info-box {
+  border: 1px solid white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: rgba(2, 99, 99, 0.1);
+}
+.info-box h3 {
+  margin-top: 0;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+}
+
+.info-box p {
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* About Preview Styles */
+.about-container {
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.about-container h1 {
+  font-family: monospace;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.pdf-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pdf-viewer {
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(2, 99, 99, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.pdf-placeholder {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.pdf-info {
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.pdf-info code {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.pdf-download-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: rgb(2, 99, 99);
   color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pdf-download-btn:hover {
+  background-color: rgb(5, 150, 150);
+  transform: scale(1.05);
 }
