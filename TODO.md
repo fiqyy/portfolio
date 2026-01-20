@@ -1,3 +1,10 @@
-- [x] Modify PDF preview in About.js to display all pages of the resume
-- [x] Remove the PDF controls section from About.js
-- [x] Verify download resume button functionality (keeping existing code)
+- [x] Add media queries to src/App.css for responsive design (header, home, contact, about sections)
+- [x] Add media queries to src/assets/modules/FlowingMenu.css for responsive font sizes and images
+- [x] Test responsiveness on mobile and tablet sizes (user will test and provide feedback)
+- [x] Fix header to appear in row on mobile
+- [x] Fix contact box order to appear above text box
+- [x] Make pdf viewer fill mobile screen height
+- [x] Fix animation in Projects component
+- [x] Center header on mobile
+- [x] Make home buttons in row on mobile
+- [x] Make contact-box in column on mobile

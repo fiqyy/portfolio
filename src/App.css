@@ -235,3 +235,98 @@
   background-color: rgb(5, 150, 150);
   transform: scale(1.05);
 }
+
+/* Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  /* Header */
+  .header-nav {
+    gap: 10px;
+  }
+  .nav-item {
+    margin-right: 20px;
+    font-size: medium;
+  }
+
+  /* Home */
+  .home {
+    margin-top: 100px;
+  }
+
+  /* Contact */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-box {
+    order: 1;
+    margin-top: 20px;
+  }
+  .info-box {
+    order: 2;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* About */
+  .pdf-viewer {
+    height: 400px;
+  }
+  .pdf-viewer iframe {
+    height: 400px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  /* Header */
+  .header-nav {
+    gap: 15px;
+    justify-content: center;
+    margin-right:15px;
+  }
+  .nav-item {
+    font-size: small;
+  }
+
+  /* Home */
+  .home {
+    margin-top: 200px;
+    margin-right: 30px;;
+  }
+  .hi-text, .hi-text2 {
+    font-size: 1.5em;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .home-button {
+    margin: 0;
+  }
+
+  /* Contact */
+  .contact-container {
+    padding: 0 10px;
+  }
+  .contact-box {
+    flex-direction: row;
+  }
+
+  /* About */
+  .about-container h1 {
+    font-size: 2em;
+  }
+  .pdf-viewer {
+    height: 80vh;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .pdf-viewer iframe {
+    height: 80vh;
+  }
+}
