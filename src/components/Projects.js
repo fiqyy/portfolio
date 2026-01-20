@@ -1,7 +1,7 @@
 import FlowingMenu from '../assets/modules/FlowingMenu'
 export default function Projects () {
 const Items = [
-  { link: 'https://fiqyytodolist.netlify.app/', text: 'To Do List App', image: '' },
+  { link: 'https://to-do-list-app-uy9e.vercel.app/', text: 'To Do List App', image: '' },
   { link: '#', text: 'Calculator App', image: '' },
 
 ];
