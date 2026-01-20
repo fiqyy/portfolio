@@ -2,7 +2,7 @@ import FlowingMenu from '../assets/modules/FlowingMenu'
 export default function Projects () {
 const Items = [
   { link: 'https://to-do-list-app-uy9e.vercel.app/', text: 'To Do List App', image: '' },
-  { link: '#', text: 'Calculator App', image: '' },
+  { link: 'https://calculator-app-dun-rho.vercel.app/', text: 'Calculator App', image: '' },
 
 ];
 return (
