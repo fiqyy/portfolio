@@ -1,6 +1,6 @@
 import Resume from '../assets/PDFs/Resume.pdf';
 
-export default function About () {
+export default function About() {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = Resume;
