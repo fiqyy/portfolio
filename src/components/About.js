@@ -1,10 +1,10 @@
-import Resume from '../assets/PDFs/Resume.pdf';
+import Resume from '../assets/PDFs/UpdatedResume.pdf';
 
 export default function About() {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = Resume;
-        link.download = 'Resume.pdf';
+        link.download = 'UpdatedResume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
