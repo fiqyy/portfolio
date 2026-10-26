@@ -1,10 +1,10 @@
-import Resume from '../assets/PDFs/UpdatedResume.pdf';
+import Resume from '../assets/PDFs/Fiqy Resume 10.27.26.pdf';
 
 export default function About() {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = Resume;
-        link.download = 'UpdatedResume.pdf';
+        link.download = 'Fiqy Resume 10.27.26.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
