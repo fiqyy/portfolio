@@ -6,6 +6,7 @@ export default function Projects() {
     { link: 'https://www.innoverstar.com/', text: 'Website For Innover Star ', image: '' },
     { link: 'https://new-eslf.vercel.app/#achievements', text: 'Website For ESLF Law Firm', image: '' },
     { link: 'https://www.emaneltobgy.com/', text: 'Dr Eman El Tobgy Web Portfolio', image: '' },
+    { link: 'https://www.doueproject.com/', text: 'DOUÈ PROJECT CLOTHING BRAND', image: '' },
   ];
   return (
     <div style={{ height: '300px', position: 'relative' }}>
