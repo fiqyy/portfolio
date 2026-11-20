@@ -5,12 +5,11 @@ import doueLogo from './assets/images/doue-project-logo.jpg';
 
 export const profile = {
   name: 'Youssef Al-Fiqy',
-  shortName: 'YF',
   location: 'Cairo, Egypt',
   email: 'fiqyyyy@gmail.com',
   phone: '+201200096266',
   phoneDisplay: '+20 120 009 6266',
-  roles: ['websites', 'automations', 'dashboards', 'digital solutions', 'mobile apps'],
+  roles: ['websites', 'automations', 'dashboards', 'digital solutions'],
 };
 
 export const socials = [
@@ -22,7 +21,7 @@ export const socials = [
 export const stats = [
   { value: '4', label: 'Client websites shipped' },
   { value: '2', label: 'Professional certificates' },
-  { value: 'UN EX', label: 'WFP digital solutions volunteer' },
+  { value: 'UN', label: 'WFP digital solutions volunteer' },
 ];
 
 export const skillGroups = [

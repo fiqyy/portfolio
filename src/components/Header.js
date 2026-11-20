@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { navItems, profile } from '../data';
+import Logo from './Logo';
 
 export default function Header() {
   const navigate = useNavigate();
@@ -56,8 +57,7 @@ export default function Header() {
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''} ${open ? 'is-open' : ''}`}>
       <div className="site-header__inner container">
         <a href="/" className="brand" onClick={(e) => go(e, navItems[0])} aria-label={`${profile.name} — home`}>
-          <span className="brand__mark">{profile.shortName}</span>
-          <span className="brand__dot" />
+          <Logo height={28} />
         </a>
 
         <nav id="site-nav" className="site-nav" aria-label="Main">

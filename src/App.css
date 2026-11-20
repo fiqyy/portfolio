@@ -206,18 +206,16 @@
   z-index: 2;
   display: inline-flex;
   align-items: center;
-  gap: 2px;
-  font-weight: 700;
-  font-size: 1.35rem;
-  letter-spacing: -0.04em;
+  min-height: 44px;
+  transition: opacity 0.2s;
 }
 
-.brand__dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--teal);
-  margin-top: 0.55em;
+.brand:hover {
+  opacity: 0.85;
+}
+
+.brand svg {
+  display: block;
 }
 
 .menu-toggle {
