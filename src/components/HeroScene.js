@@ -3,7 +3,7 @@ import * as THREE from 'three';
 
 const TEAL = 0x2ee6d6;
 const TEAL_SOFT = 0x7ffff4;
-const WARM = 0xff8a65;
+const WARM = 0x58f9ff;
 
 function prefersReducedMotion() {
   return typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
