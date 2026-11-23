@@ -1,7 +1,7 @@
 // All site copy lives here so content updates never require touching layout code.
 import emanLogo from './assets/images/eman-el-tobgy-logo.png';
 import innoverLogo from './assets/images/innover-star-logo.png';
-import doueLogo from './assets/images/doue-project-logo.jpg';
+import doueLogo from './assets/images/doue-project-logo.png';
 
 export const profile = {
   name: 'Youssef Al-Fiqy',
@@ -84,7 +84,7 @@ export const projects = [
     description: 'A modern website presenting the firm, its practice areas and achievements.',
     tags: ['Client work', 'Responsive', 'Web development'],
     href: 'https://new-eslf.vercel.app/',
-    hue: 42,
+    hue: 196,
   },
   {
     title: 'Innover Star',
@@ -100,7 +100,7 @@ export const projects = [
     title: 'Douè Project',
     mark: 'DP',
     logo: doueLogo,
-    logoPlate: 'dark',
+    logoTone: 'light', // artwork is already white — skip the invert filter
     kind: 'Clothing brand',
     description: 'Online home for a clothing brand, plus design assets such as size charts.',
     tags: ['Client work', 'Brand', 'Design assets'],

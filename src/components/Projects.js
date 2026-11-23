@@ -25,16 +25,27 @@ export default function Projects() {
               <TiltCard className="project">
                 <a className="project__link" href={p.href} target="_blank" rel="noopener noreferrer">
                   <div className="project__cover" style={{ '--hue': p.hue, '--sat': `${p.saturation ?? 85}%` }} aria-hidden="true">
-                    <span className="project__orb" />
-                    <span className="project__grid" />
-                    {p.logo ? (
-                      <span className={`project__logo ${p.logoPlate === 'dark' ? 'project__logo--dark' : ''}`.trim()}>
-                        <img src={p.logo} alt="" loading="lazy" decoding="async" />
+                    <span className="project__glow" />
+                    <span className="project__floor" />
+                    <div className="project__chrome">
+                      <span className="project__dots"><i /><i /><i /></span>
+                      <span className="project__url">{displayHost(p.href)}</span>
+                      <span className="project__status">Live</span>
+                    </div>
+                    <div className="project__stage">
+                      <span className="project__frame">
+                        {p.logo ? (
+                          <img className={`project__logo${p.logoTone === 'light' ? ' project__logo--light' : ''}`} src={p.logo} alt="" loading="lazy" decoding="async" />
+                        ) : (
+                          <span className="project__monogram">{p.mark}</span>
+                        )}
                       </span>
-                    ) : (
-                      <span className="project__monogram">{p.mark}</span>
-                    )}
-                    <span className="project__num">0{i + 1}</span>
+                    </div>
+                    <span className="project__scan" />
+                    <div className="project__meta">
+                      <span>{String(i + 1).padStart(2, '0')} / {String(projects.length).padStart(2, '0')}</span>
+                      <span>{p.kind}</span>
+                    </div>
                   </div>
                   <div className="project__body">
                     <p className="project__kind">{p.kind}</p>
@@ -46,7 +57,6 @@ export default function Projects() {
                     <ul className="chips chips--small">
                       {p.tags.map((t) => <li key={t}>{t}</li>)}
                     </ul>
-                    <span className="project__host">{displayHost(p.href)}</span>
                   </div>
                 </a>
               </TiltCard>
