@@ -58,7 +58,7 @@ export default function Contact() {
             <span className="text-outline">Let's build it.</span>
           </h2>
           <p className="contact-hero__lead">
-            I'm open to freelance work, internships and full-time roles. The fastest way to reach me is email.
+            I'm open to freelance work, internships and full-time roles.
           </p>
           <div className="contact-hero__actions">
             <a className="btn btn--primary btn--lg" href={mailto}>
